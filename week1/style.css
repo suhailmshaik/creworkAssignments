@@ -1,0 +1,105 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 0%;
+  min-height: 100%;
+  font-family: "Commissioner", sans-serif;
+  font-weight: bold;
+
+  background: linear-gradient(355deg, #d7d7d7, #db2929, #0060ae, #000000);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 16s ease infinite;
+  -moz-animation: AnimationName 16s ease infinite;
+  animation: AnimationName 16s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 51% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 51% 0%;
+  }
+}
+
+section {
+  background-color: black;
+  color: white;
+  padding: 2% 5%;
+  height: 50%;
+  width: 20%;
+}
+
+.google {
+  padding: 0%;
+  height: 25px;
+  width: 150px;
+}
+
+.icon {
+  height: 10px;
+}
+
+.crework {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+span {
+  color: orange;
+}
+
+input {
+  width: 75%;
+  height: 20px;
+}
+
+#TC,
+#rememberMe {
+  width: 5%;
+}
+
+.logIn,
+.signUp {
+  height: 2rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

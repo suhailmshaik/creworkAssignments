@@ -5,36 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login page</title>
+    <link rel="stylesheet" href="/week1/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner&family=Reenie+Beanie&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <strong><h1>sign up</h1></strong>
-    <a href=""><button type="button">Sign up with google</button></a>
-    <br />
-    <br />
-    <form>
-      <label for="name">Name:</label>
-      <br />
-      <input type="text" name="name" id="name" />
-      <br />
-      <br />
-      <label for="email">Email:</label>
-      <br />
-      <input type="email" name="email" id="email" />
+    <section>
+      <h1 class="crework">Crework<span>.</span></h1>
+      <h1>sign up</h1>
+      <a href="">
+        <button type="button" class="google">
+          <img class="icon" src="/week1/images/google.png" alt="google-icon" />
+          Sign up with google
+        </button></a
+      >
       <br />
       <br />
-      <label for="password">Password:</label>
+      <form>
+        <label for="name">Name:</label>
+        <br />
+        <input type="text" name="name" id="name" />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" name="email" id="email" />
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" name="password" id="password" />
+        <br />
+        <br />
+        <input type="checkbox" id="TC" name="T&C" />
+        <label for="T&C">
+          I agree with <a href="">terms</a> and <a href="">services</a></label
+        ><br />
+        <br />
+        <button class="signUp" type="submit">sign up</button>
+      </form>
+      <p>Already have an account?</p>
+      <a href="/week1/logIn.html">Log in</a>
       <br />
-      <input type="password" name="password" id="password" />
-      <br />
-      <br />
-      <input type="checkbox" id="T&C" name="T&C" />
-      <label for="T&C">
-        I agree with <a href="">terms</a> and <a href="">services</a></label
-      ><br />
-      <br />
-      <button type="submit">sign up</button>
-    </form>
-    <p>Already have an account?</p>
-    <a href="/week1/logIn.html">Log in</a>
+    </section>
   </body>
 </html>
