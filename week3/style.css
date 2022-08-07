@@ -120,40 +120,54 @@ footer > a {
   margin: 0.5rem;
 }
 
-/* responsive design  */
+.cr {
+  text-align: center;
+  font-weight: lighter;
 
-@media all and (min-device-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
+  /* responsive design  */
 
-  main {
-    padding: 2rem;
-    margin: 3rem;
-  }
+  @media (min-width: 1025px) {
+    h1 {
+      font-size: 2.5rem;
+    }
 
-  .main {
-    font-size: 3.5rem;
-  }
+    main {
+      padding: 2rem;
+      margin: 3rem;
+    }
 
-  .sub {
-    font-size: 1.5rem;
-  }
+    .main {
+      font-size: 3.5rem;
+    }
 
-  button {
-    padding: 2rem;
-    font-size: 1.5rem;
-    width: 30%;
-  }
+    .sub {
+      font-size: 1.5rem;
+    }
 
-  .pro-heading {
-    padding-top: 4rem;
-    margin: 2rem;
-    font-size: 2.5rem;
-  }
+    button {
+      padding: 2rem;
+      font-size: 1.5rem;
+      width: 30%;
+    }
 
-  #programs {
-    display: flex;
-    flex-direction: row;
+    .pro-heading {
+      padding-top: 4rem;
+      margin: 2rem;
+      font-size: 2.5rem;
+    }
+
+    #programs {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .propic {
+      height: 12.5rem;
+      width: 25rem;
+    }
+
+    .socials > h2 {
+      font-size: 2rem;
+    }
   }
 }
