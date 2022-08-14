@@ -33,13 +33,17 @@
         <br />
         <label for="email">Email:</label>
         <br />
-        <input type="email" name="email" id="email" />
+        <input type="text" name="email" id="email" />
         <br />
+        <p class="emailError" class="show">please enter a valid email ID</p>
         <br />
         <label for="password">Password:</label>
         <br />
         <input type="password" name="password" id="password" />
         <br />
+        <p class="passError" class="show">
+          password should be between 4 to 12 characters
+        </p>
         <br />
         <input type="checkbox" id="TC" name="T&C" />
         <label for="T&C">
@@ -52,5 +56,7 @@
       <a href="/week1/logIn.html">Log in</a>
       <br />
     </section>
+
+    <script src="./app.js"></script>
   </body>
 </html>

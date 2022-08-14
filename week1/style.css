@@ -103,3 +103,13 @@ input {
   justify-content: center;
   align-items: center;
 }
+
+.emailError,
+.passError {
+  display: none;
+}
+
+.show {
+  display: block;
+  color: white;
+}
