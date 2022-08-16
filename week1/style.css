@@ -26,8 +26,8 @@ body {
   }
   50% {
     background-position: 50% 100%;
-  }
-  100% {
+    100% {
+    }
     background-position: 51% 0%;
   }
 }
@@ -57,19 +57,24 @@ body {
 section {
   background-color: black;
   color: white;
-  padding: 2% 5%;
-  height: 50%;
-  width: 20%;
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .google {
   padding: 0%;
-  height: 25px;
-  width: 150px;
+  height: 2.5rem;
+  width: 15rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 .icon {
-  height: 10px;
+  height: 0.9rem;
 }
 
 .crework {
@@ -86,8 +91,10 @@ span {
 }
 
 input {
-  width: 75%;
-  height: 20px;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 4px;
+  border-style: none;
 }
 
 #TC,
@@ -95,13 +102,18 @@ input {
   width: 5%;
 }
 
+/* .msg {
+  text-align: center;
+} */
+
 .logIn,
 .signUp {
   height: 2rem;
-  width: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 6rem;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 .emailError,
@@ -111,7 +123,7 @@ input {
 
 .show {
   display: block;
-  color: white;
+  color: red;
 }
 
 .alert {
@@ -127,4 +139,16 @@ input {
 
 .alert.show {
   transform: scale(1);
+}
+
+/* responsive design */
+
+@media (min-width: 1025px) {
+  section {
+    padding: 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

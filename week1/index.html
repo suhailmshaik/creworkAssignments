@@ -31,31 +31,42 @@
       <form>
         <label for="name">Name:</label>
         <br />
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" placeholder="John Doe" />
         <br />
         <br />
         <label for="email">Email:</label>
         <br />
-        <input type="text" name="email" id="email" />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="example@email.com"
+        />
         <br />
         <p class="emailError" class="show">please enter a valid email ID</p>
         <br />
         <label for="password">Password:</label>
         <br />
-        <input type="password" name="password" id="password" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="4-12 characters"
+        />
         <br />
         <p class="passError" class="show">
           password should be between 4 to 12 characters
         </p>
         <br />
         <input type="checkbox" id="TC" name="T&C" />
+
         <label for="T&C">
           I agree with <a href="">terms</a> and <a href="">services</a></label
         ><br />
         <br />
-        <button class="signUp" type="submit">sign up</button>
       </form>
-      <p>Already have an account?</p>
+      <button class="signUp" type="submit">sign up</button>
+      <p class="msg">Already have an account?</p>
       <a href="/week1/logIn.html">Log in</a>
       <br />
     </section>
