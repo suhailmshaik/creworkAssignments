@@ -50,7 +50,7 @@ button:hover {
 }
 
 .showAddTask {
-  height: 16rem;
+  height: 6rem;
   width: 16rem;
   padding: 2rem;
   color: white;
@@ -62,11 +62,50 @@ button:hover {
   flex-direction: column;
 }
 
-/* .tasks {
-  background-color: aqua;
-  padding: 2rem;
+#Tname {
+  border: 0px;
+}
+
+.add {
+  border: 0px;
+  border-radius: 5px;
+  width: 6rem;
+  padding: 0.5rem;
+  align-self: center;
+}
+
+.tasks {
+  display: none;
+}
+
+.showTasks {
+  display: block;
+  border: 2px solid white;
   margin: 2rem;
-} */
+  padding: 2rem;
+  width: 16rem;
+}
+
+.taskBox {
+  display: flex;
+  /* margin: 0 10px; */
+}
+
+.taskBox > p {
+  margin: auto;
+  text-align: left;
+}
+
+.active {
+  text-decoration: line-through;
+}
+
+.taskBox > button {
+  border: 0px;
+  border-radius: 5px;
+  margin: 10px;
+  height: 2rem;
+}
 
 footer {
   position: fixed;
@@ -77,7 +116,11 @@ footer {
 
 @media (min-width: 1025px) {
   .showAddTask {
-    height: 18rem;
-    width: 24rem;
+    height: 6rem;
+    width: 26rem;
+  }
+
+  .showTasks {
+    width: 26rem;
   }
 }
