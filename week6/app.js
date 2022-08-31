@@ -29,18 +29,17 @@ let taskAdded = () => {
   let taskData = {
     taskName: Tname.value,
   };
-
+  Tname.value = "";
   return taskData.taskName;
 };
 
 // function which displays the added tasks
 
 let displayTasks = (t) => {
-  if (t === "") {
+  if (t === "" && tasksDiv.childNodes.length === 0) {
     tasksDiv.classList.remove("showTasks");
     return;
   }
-
   console.log(t);
   let task = document.createElement("div");
   let doneTask = document.createElement("button");
