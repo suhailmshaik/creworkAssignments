@@ -17,9 +17,11 @@ let showAddTask = () => {
 // function which takes task name as input
 
 let taskAdded = () => {
-  if (Tname.value === "") return;
+  // if (Tname.value === "") return;
+
   taskForm.classList.remove("showAddTask");
   addTaskBtn.style.display = "block";
+
   taskForm.classList.remove("showAddTask");
   addTaskBtn.style.display = "block";
   tasksDiv.classList.add("showTasks");
@@ -34,6 +36,11 @@ let taskAdded = () => {
 // function which displays the added tasks
 
 let displayTasks = (t) => {
+  if (t === "") {
+    tasksDiv.classList.remove("showTasks");
+    return;
+  }
+
   console.log(t);
   let task = document.createElement("div");
   let doneTask = document.createElement("button");
