@@ -39,6 +39,9 @@ let displayTasks = (t) => {
   if (t === "" && tasksDiv.childNodes.length === 0) {
     tasksDiv.classList.remove("showTasks");
     return;
+  } else if (tasksDiv.childNodes.length > 0 && t === "") {
+    tasksDiv.classList.add("showTasks");
+    return;
   }
   console.log(t);
   let task = document.createElement("div");
