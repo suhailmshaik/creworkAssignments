@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 1rem;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+
+  background: linear-gradient(
+    227deg,
+    #ff6363,
+    #f92929,
+    #3f8c00,
+    #00748e,
+    #dd137c,
+    #7700ff
+  );
+  background-size: 1200% 1200%;
+
+  -webkit-animation: AnimationName 59s ease infinite;
+  -moz-animation: AnimationName 59s ease infinite;
+  animation: AnimationName 59s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.quotes {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.input > input {
+  color: white;
+  height: 2rem;
+  width: 16rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 2px 5px;
+  outline: none;
+  margin: 20px;
+}
+
+.input > button {
+  height: 2rem;
+  width: 4rem;
+  border-radius: 5px;
+  color: white;
+  border: 0.2px solid white;
+  background-color: transparent;
+}
+
+.input > button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.tasks-div {
+  margin: 4rem;
+}
+
+.taskBox {
+  display: flex;
+  /* margin: 0 10px; */
+}
+
+.taskBox > p {
+  margin: auto;
+  text-align: left;
+}
+
+.taskBox > button {
+  border-radius: 5px;
+  margin: 10px;
+  height: 2rem;
+  color: white;
+  border: 0.2px solid white;
+  background-color: transparent;
+}
+
+.active {
+  text-decoration: line-through;
+}
+
+.taskBox > button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .input {
+    flex-direction: row;
+  }
+}
