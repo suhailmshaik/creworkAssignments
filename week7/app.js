@@ -1,13 +1,19 @@
+// variable declarations
+
 let input = document.querySelector("input");
 let addBtn = document.querySelector(".add-btn");
 let taskDiv = document.querySelector(".tasks-div");
 let quote = document.querySelector(".quotes");
+
+// function to get user input
 
 let getTask = () => {
   let Tname = input.value;
   input.value = "";
   return Tname;
 };
+
+// function to add tasks
 
 let addTasks = (t) => {
   if (t == "") return;
@@ -35,6 +41,8 @@ let addTasks = (t) => {
 };
 
 let n = Math.floor(Math.random() * 500 + 1);
+
+// function to fetch quotes and author name from quotes API
 
 let getQuote = () => {
   axios
