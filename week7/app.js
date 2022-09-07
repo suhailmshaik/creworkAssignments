@@ -42,15 +42,33 @@ let addTasks = (t) => {
 
 let n = Math.floor(Math.random() * 500 + 1);
 
+// function to check if the value of author is null or not
+
+let showQuote = (q, a) => {
+  if (a === null) {
+    a = "Anonymous";
+    quote.innerHTML = `${q} <br> <br> - ${a}`;
+  } else if (a === undefined || q === undefined) {
+    quote.innerHTML = "";
+  } else {
+    quote.innerHTML = `${q} <br> <br> - ${a}`;
+  }
+  // quote.innerHTML = `${q} <br> <br> - ${a}`;
+  console.log(`${q} - ${a}`);
+};
+
 // function to fetch quotes and author name from quotes API
 
 let getQuote = () => {
   axios
     .get("https://type.fit/api/quotes")
     .then((res) => {
-      quote.innerHTML = `${res.data[n].text} <br> <br> - ${res.data[n].author}`;
+      showQuote(res.data[n].text, res.data[n].author);
+      // quote.innerHTML = `${res.data[n].text} <br> <br> - ${res.data[n].author}`;
     })
-    .catch((err) => console.error(err));
+    .catch((err) => {
+      console.error(err);
+    });
 };
 
 getQuote();
