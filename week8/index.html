@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>conCalc</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Open your browser console to access conCalc!</h1>
+    <script>
+      console.log("welcome to conCalc");
+
+      //how to use instructions
+      let help = () => {
+        console.log("use 'input.add(value)' for addition");
+        console.log("use 'input.sub(value)' for subtraction");
+        console.log("use 'input.add(value)' for Multiplication");
+        console.log("use 'input.add(value)' for division");
+        console.log("use 'help()' if you want to see commands");
+        console.log("use 'input.clear()' to reset");
+      };
+
+      help();
+
+      //class calc to perform calculations
+      class calc {
+        constructor(value, result) {
+          this.value = value;
+          this.result = result;
+        }
+
+        //method for addition
+        add(n) {
+          this.value = this.value + n;
+          this.result = this.value;
+          console.log(this.result);
+        }
+
+        // method for subtraction
+        sub(n) {
+          this.value = this.value - n;
+          this.result = this.value;
+          console.log(this.result);
+        }
+
+        // method for multiplication
+        mul(n) {
+          this.value = this.value * n;
+          this.result = this.value;
+          console.log(this.result);
+        }
+
+        // method for division
+        div(n) {
+          this.value = this.value / n;
+          this.result = this.value;
+          console.log(this.result);
+        }
+
+        // method to clear result
+        clear() {
+          this.value = 0;
+          this.result = 0;
+          console.log(this.result);
+        }
+      }
+
+      let input = new calc(0, 0);
+    </script>
+  </body>
+</html>
