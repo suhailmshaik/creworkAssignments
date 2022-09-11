@@ -38,6 +38,7 @@
 
         //method for addition
         add(n) {
+          if (!n) return;
           this.value = this.value + n;
           this.result = this.value;
           console.log(this.result);
@@ -45,6 +46,7 @@
 
         // method for subtraction
         sub(n) {
+          if (!n) return;
           this.value = this.value - n;
           this.result = this.value;
           console.log(this.result);
@@ -52,6 +54,7 @@
 
         // method for multiplication
         mul(n) {
+          if (!n) return;
           this.value = this.value * n;
           this.result = this.value;
           console.log(this.result);
@@ -59,6 +62,7 @@
 
         // method for division
         div(n) {
+          if (!n) return;
           this.value = this.value / n;
           this.result = this.value;
           console.log(this.result);
